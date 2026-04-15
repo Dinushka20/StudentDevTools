@@ -86,6 +86,50 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
+      </section>
+
+      {/* Latest Articles Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-end mb-10">
+            <div>
+              <h2 className="text-3xl font-bold mb-2">Latest Student Guides</h2>
+              <p className="text-muted-foreground">Expert articles to help you navigate academic life.</p>
+            </div>
+            <Link href="/blog" className="hidden md:flex text-primary font-medium items-center hover:underline">
+              View all articles <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href="/blog/time-management-for-students" className="group flex flex-col justify-between p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors">
+              <div>
+                <span className="text-xs font-semibold text-primary/80 uppercase tracking-wider mb-2 block">Productivity</span>
+                <h3 className="text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">The Ultimate Guide to Student Time Management</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">Discover how to leverage the Pomodoro technique to eliminate burnout, retain more information, and finally stop cramming before midterms.</p>
+              </div>
+              <div className="text-sm text-muted-foreground font-medium flex items-center">
+                Read Article <ArrowRight className="ml-1 h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+              </div>
+            </Link>
+
+            <Link href="/blog/ultimate-guide-to-gpa" className="group flex flex-col justify-between p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors">
+              <div>
+                <span className="text-xs font-semibold text-primary/80 uppercase tracking-wider mb-2 block">Academics</span>
+                <h3 className="text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">Does Your College GPA Actually Matter?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">An in-depth look at when your transcript is crucial (internships, grad school, finance) and when employers barely even glance at it.</p>
+              </div>
+              <div className="text-sm text-muted-foreground font-medium flex items-center">
+                Read Article <ArrowRight className="ml-1 h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+              </div>
+            </Link>
+          </div>
+          
+          <div className="mt-8 text-center md:hidden">
+            <Link href="/blog" className="inline-flex text-primary font-medium items-center hover:underline">
+              View all articles <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </div>

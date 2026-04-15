@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Calculator, Code2, GraduationCap, BrainCircuit } from 'lucide-react';
+import { Calculator, Code2, GraduationCap, BrainCircuit, BookText } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -12,6 +12,9 @@ export default function Navbar() {
           <span className="text-xl font-bold tracking-tight">StudentDev <span className="text-primary">Hub</span></span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+          <Link href="/blog" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <BookText className="h-4 w-4" /> Articles
+          </Link>
           <Link href="/tools" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
             <Calculator className="h-4 w-4" /> Tools
           </Link>
